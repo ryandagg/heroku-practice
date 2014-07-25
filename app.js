@@ -10,6 +10,6 @@ app.get('/', function(req, res) {
 });
 
 // 1) Modify the port to use whatever heroku gives us.
-var server = app.listen(process.env.port || 5403, function() {
+var server = app.listen(process.env.PORT || 5403, function() {
 	console.log('Express server listening on port ' + server.address().port);
 });
